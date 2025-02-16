@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <InputActions>
+        <InsertOrIgnore
+            ActionId="md-toggle-auto-end-turn"
+            Name="LOC_MADDACHSHUND_TOGGLE_AUTO_END_TURN"
+            Description="LOC_MADDACHSHUND_TOGGLE_AUTO_END_TURN_DESC"
+            SortIndex="10000"
+        />
+    </InputActions>
+</Database>

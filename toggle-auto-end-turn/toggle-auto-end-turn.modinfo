@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="md_toggle_auto_end_turn" version="1"
+     xmlns="ModInfo">
+    <Properties>
+        <Name>Toggle Auto End Turn</Name>
+        <Description>Adds hotkey to toggle auto end turn</Description>
+        <Authors>MadDachshund</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet/>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="md_toggle_auto_end_turn-always" scope="shell" criteria="always">
+            <Properties>
+                <LoadOrder>100</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateText>
+                    <Item>text/keybinds-names.sql</Item>
+                </UpdateText>
+                <UpdateDatabase>
+                    <Item>data/input-actions.xml</Item>
+                    <Item>data/input-context-constraints.xml</Item>
+                    <Item>data/input-action-default-gestures.xml</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="md_toggle_auto_end_turn-ui-always" scope="game" criteria="always">
+            <Actions>
+                <UIScripts>
+                    <Item>ui/toggle-auto-end-turn.js</Item>
+                </UIScripts>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+</Mod>

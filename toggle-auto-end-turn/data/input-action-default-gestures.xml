@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <InputActionDefaultGestures>
+        <InsertOrIgnore
+                ActionId="md-toggle-auto-end-turn"
+                Index="0"
+                GestureType="KBMouse"
+                GestureData="KEY_CONTROL+KEY_ALT+KEY_T"
+        />
+    </InputActionDefaultGestures>
+</Database>
