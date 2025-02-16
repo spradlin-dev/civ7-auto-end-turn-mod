@@ -40,8 +40,12 @@
                 <LoadOrder>100</LoadOrder>
             </Properties>
             <Actions>
+                <UpdateText>
+                    <Item>text/keybinds-names.sql</Item>
+                </UpdateText>
                 <UIScripts>
                     <Item>ui/toggle-auto-end-turn.js</Item>
+                    <Item>ui/register-aet-keybinding.js</Item>
                 </UIScripts>
             </Actions>
         </ActionGroup>
