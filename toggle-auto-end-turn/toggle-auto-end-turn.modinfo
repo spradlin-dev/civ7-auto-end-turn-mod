@@ -30,6 +30,9 @@
                     <Item>data/input-context-constraints.xml</Item>
                     <Item>data/input-action-default-gestures.xml</Item>
                 </UpdateDatabase>
+                <UIScripts>
+                    <Item>ui/register-aet-keybinding.js</Item>
+                </UIScripts>
             </Actions>
         </ActionGroup>
         <ActionGroup id="md_toggle_auto_end_turn-ui-always" scope="game" criteria="always">
